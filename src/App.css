@@ -1,0 +1,61 @@
+body {
+  --azalea: rgb(224, 29, 159);
+  background-color: cornflowerblue;
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+#header-banner {
+  background-color: cornsilk;
+  border: 2px solid var(--azalea);
+  box-shadow: 0px 0px 20px 2px var(--azalea);
+  border-radius: 10px;
+  color: var(--azalea);
+  margin-top: 10px;
+  padding: 5px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+form {
+  color: midnightblue;
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  padding: 5px;
+  min-width: 260px;
+}
+
+form > * {
+  padding: 5px;
+}
+
+label > input {
+  border: 0px none;
+  border-radius: 5px;
+  float: right;
+}
+
+.btn {
+  align-self: center;
+  background-color: cornsilk;
+  border: 2px solid var(--azalea);
+  border-radius: 10px;
+  color: var(--azalea);
+  font-size: large;
+  width: 70px;
+}
+
+.last-submission {
+  color: midnightblue;
+  text-align: center;
+  width: 260px;
+}
