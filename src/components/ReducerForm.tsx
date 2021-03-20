@@ -33,7 +33,10 @@ const ReducerForm: FunctionComponent = () => {
 
   return (
     <section className='form-container'>
-      <form onSubmit={handleSubmit}>
+      <article className='form-title'>
+        <h2>Reducer Form</h2>
+      </article>
+      <form className='reducer-form' onSubmit={handleSubmit}>
         <label>
           First Name:
           <input type='text' name='firstName' value={state.firstName} onChange={handleChange}/>

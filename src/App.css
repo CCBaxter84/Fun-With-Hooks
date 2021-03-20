@@ -20,7 +20,9 @@ header {
 }
 
 main {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 20px 0;
 }
@@ -44,6 +46,16 @@ label > input {
   float: right;
 }
 
+.reducer-form, .form-title {
+  color: maroon;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.form-title {
+  text-align: center;
+}
+
+
 .btn {
   align-self: center;
   background-color: cornsilk;
@@ -51,7 +63,16 @@ label > input {
   border-radius: 10px;
   color: var(--azalea);
   font-size: large;
-  width: 70px;
+  margin: 0 10px;
+  min-width: 100px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.controller-btns {
+  margin: 20px 0;
 }
 
 .last-submission {

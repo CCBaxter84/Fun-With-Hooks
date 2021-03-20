@@ -2,11 +2,11 @@ import { FunctionComponent, useState } from 'react';
 import { IHandlerFunction } from '../sharedInterfaces';
 
 const Form: FunctionComponent = () => {
-  const [ firstName, setFirstName ] = useState('');
-  const [ lastName, setLastName ] = useState('');
-  const [ planet, setPlanet ] = useState('');
-  const [ affiliation, setAffiliation ] = useState('');
-  const [ showState, setShowState ] = useState(false);
+  const [ firstName, setFirstName ] = useState<string>('');
+  const [ lastName, setLastName ] = useState<string>('');
+  const [ planet, setPlanet ] = useState<string>('');
+  const [ affiliation, setAffiliation ] = useState<string>('');
+  const [ showState, setShowState ] = useState<boolean>(false);
 
   const handleSubmit: IHandlerFunction = event => {
     event.preventDefault();
