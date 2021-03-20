@@ -16,7 +16,8 @@ const Container: FC<IProps> = ({ options }) => {
           return (
             <ButtonToggle
               key={`button${index}`}
-              toggleForm={() => setCurrentForm(index)}>
+              toggleForm={() => setCurrentForm(index)}
+            >
               {el.name}
             </ButtonToggle>
           );
@@ -30,7 +31,6 @@ const Container: FC<IProps> = ({ options }) => {
                 {createElement(el.component)}
               </section>
             </>
-
           )
         })}
       </FormToggle>
